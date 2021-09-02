@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  rdb-alpha:
+    container_name: rdb-alpha
+    build: .
+    tty: true # keep container running indefinitely

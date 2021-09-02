@@ -1,0 +1,7 @@
+{
+  "name": "RDB Alpha",
+  "dockerFile": "Dockerfile",
+  "extensions": [
+    "coderoad.coderoad"
+  ]
+}
