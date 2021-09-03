@@ -1,7 +1,7 @@
 ### Prerequisites
 
-1. Docker and Docker Compose
-1. VSCode and the [Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
+1. [Docker Engine](https://docs.docker.com/engine/) and [Docker Compose](https://docs.docker.com/compose/)
+1. [VSCode](https://code.visualstudio.com/download) and the [Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 1. Git
 
 ### How to Run a Project in Docker
