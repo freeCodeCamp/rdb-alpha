@@ -1,9 +1,8 @@
 FROM ubuntu
 
-ARG USERNAME=codeally
-ARG HOMEDIR=/home/$USERNAME
-
-ENV TZ="America/New_York" \
+ENV USERNAME=codeally \
+  HOMEDIR=/home/$USERNAME \
+  TZ="America/New_York" \
   NODE_VERSION=14 \
   NVM_DIR="${HOMEDIR}/.nvm" \
   LOCALE=en_US.UTF-8
