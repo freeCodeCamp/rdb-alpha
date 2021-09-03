@@ -8,7 +8,7 @@ ENV TZ="America/New_York" \
   NODE_VERSION=14 \
   NVM_DIR="${HOMEDIR}/.nvm"
 
-RUN apt-get update && apt-get install -y sudo
+RUN apt-get update && apt-get install -y sudo && sudo apt install nano
 
 # Unminimize Ubuntu to restore man pages
 RUN yes | unminimize
