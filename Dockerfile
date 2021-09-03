@@ -1,11 +1,12 @@
 FROM ubuntu
 
-ENV USERNAME=codeally \
-  HOMEDIR=/home/$USERNAME \
-  TZ="America/New_York" \
+ARG USERNAME=codeally
+ARG HOMEDIR=/home/$USERNAME
+
+ENV TZ="America/New_York" \
+  LOCALE=en_US.UTF-8 \
   NODE_VERSION=14 \
-  NVM_DIR="${HOMEDIR}/.nvm" \
-  LOCALE=en_US.UTF-8
+  NVM_DIR="${HOMEDIR}/.nvm"
 
 RUN apt-get update && apt-get install -y sudo
 
@@ -30,7 +31,7 @@ USER ${USERNAME}
 RUN sudo apt install -y curl git postgresql postgresql-contrib man-db
 
 # Set up locales
-RUN sudo locale-gen ${LOCALE} && sudo sudo update-locale LANG=${LOCALE}
+RUN sudo locale-gen ${LOCALE} && sudo update-locale LANG=${LOCALE}
 
 # Set shell to install nvm
 SHELL ["/bin/bash", "--login", "-i", "-c"]
