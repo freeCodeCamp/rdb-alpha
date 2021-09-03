@@ -28,7 +28,7 @@ RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> \
 USER ${USERNAME}
 
 # Install packages for projects
-RUN sudo apt install -y curl git postgresql postgresql-contrib man-db
+RUN sudo apt install -y curl git postgresql postgresql-contrib nano man-db
 
 # Set up locales
 RUN sudo locale-gen ${LOCALE} && sudo update-locale LANG=${LOCALE}
