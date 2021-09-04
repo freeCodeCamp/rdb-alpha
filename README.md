@@ -11,7 +11,7 @@
 1. Once the image is built and the container is running, open VSCode
 1. Press Ctrl / Cmd + P and enter `Remote-Containers:Attach to Running Container...`
 1. Select the `rdb-alpha` container from the dropdown
-1. In the new VSCode window, wait for the container to load. Then press Ctrl / Cmd + P and enter `CodeRoad: Start`
+1. In the new VSCode window, wait for the container to load and for the CodeRoad extension to install. Then press Ctrl / Cmd + P and enter `CodeRoad: Start`
 1. In the CodeRoad window, click "Start New Tutorial"
 1. Enter the URL to the `tutorial.json` file of the project you want to start (ex: https://raw.githubusercontent.com/moT01/.learn-bash-by-building-a-boilerplate/main/tutorial.json)
 1. Click the "Start" button
