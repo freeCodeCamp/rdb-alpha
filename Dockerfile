@@ -8,7 +8,7 @@ ENV TZ="America/New_York" \
   NODE_VERSION=14 \
   NVM_DIR="${HOMEDIR}/.nvm"
 
-RUN apt-get update && apt-get install -y sudo
+RUN apt update && apt install -y sudo
 
 # Unminimize Ubuntu to restore man pages
 RUN yes | unminimize
