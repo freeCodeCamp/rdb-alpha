@@ -1,6 +1,6 @@
 {
   "name": "RDB Alpha",
-  "dockerFile": "Dockerfile",
+  "dockerFile": "../Dockerfile",
   "workspaceFolder": "/home/codeally/project",
   "extensions": [
     "coderoad.coderoad"

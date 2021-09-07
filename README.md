@@ -1,30 +1,30 @@
 ### Prerequisites
 
-1. [Docker Engine](https://docs.docker.com/engine/) and [Docker Compose](https://docs.docker.com/compose/)
-1. [VSCode](https://code.visualstudio.com/download) and the [Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
+1. [Docker Engine](https://docs.docker.com/engine/)
+1. [VS Code](https://code.visualstudio.com/download) and the [Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 1. Git
 
 ### How to Run a Project in Docker
 
 1. Clone the RDB Alpha repo with `git clone https://github.com/scissorsneedfoodtoo/rdb-alpha`
-1. From the `rdb-alpha` directory, run `docker-compose up -d`
-1. Once the image is built and the container is running, open VSCode
-1. Press Ctrl / Cmd + P and enter `Remote-Containers:Attach to Running Container...`
-1. Select the `rdb-alpha` container from the dropdown
-1. In the new VSCode window, wait for the container to load and for the CodeRoad extension to install. Then press Ctrl / Cmd + P and enter `CodeRoad: Start`
+1. Open a terminal, navigate to the `rdb-alpha` directory, and open VSCode with `code .`
+1. Press Ctrl / Cmd + P and enter `Remote-Containers: Rebuild Container and Reopen in Container`
+1. A new VS Code window will open and begin building the Docker image. It will take several minutes to build the first time.
+1. Once the image is finished building, press Ctrl / Cmd + P and enter `CodeRoad: Start` to open CodeRoad
 1. In the CodeRoad window, click "Start New Tutorial"
 1. Enter the URL to the `tutorial.json` file of the project you want to start (ex: https://raw.githubusercontent.com/moT01/.learn-bash-by-building-a-boilerplate/main/tutorial.json)
 1. Click the "Start" button
-1. Enter `exit` in the current VSCode terminal and click the "X" button to close the terminal window
-1. Open a new VSCode terminal with Ctrl / Cmd + `
+1. If a VS Code terminal is open, kill it by clicking the trashcan icon in the upper-right corner
+1. Open a new VS Code terminal with Ctrl / Cmd + Shift + `
 1. Start coding
 
 ### How to Restart or Switch Projects
 
-1. Close the project's VSCode window
-1. In a terminal, navigate to the `rdb-alpha` directory and run `docker-compose down`
-1. Run `docker-compose up -d`
-1. Open VSCode and attach to the remote `rdb-alpha` container as described above
+Note: If you restart or switch projects you will lose your progress, along with any files or directories you created.
+
+1. Press Ctrl / Cmd + P and enter `Remote-Containers: Rebuild Container`
+1. Wait for VS Code to reopen and reload the Docker container
+1. Open CodeRoad, enter the URL to a `tutorial.json` file, and start the project as described above
 
 ### `tutorial.json` File URLs for CodeRoad
 
