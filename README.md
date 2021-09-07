@@ -8,9 +8,9 @@
 
 1. Clone the RDB Alpha repo with `git clone https://github.com/scissorsneedfoodtoo/rdb-alpha`
 1. Open a terminal, navigate to the `rdb-alpha` directory, and open VSCode with `code .`
-1. Press Ctrl / Cmd + P and enter `Remote-Containers: Rebuild Container and Reopen in Container`
+1. Press Ctrl / Cmd + Shift + P and enter `Remote-Containers: Rebuild Container and Reopen in Container`
 1. A new VS Code window will open and begin building the Docker image. It will take several minutes to build the first time.
-1. Once the image is finished building, press Ctrl / Cmd + P and enter `CodeRoad: Start` to open CodeRoad
+1. Once the image is finished building, press Ctrl / Cmd + Shift + P and enter `CodeRoad: Start` to open CodeRoad
 1. In the CodeRoad window, click "Start New Tutorial"
 1. Enter the URL to the `tutorial.json` file of the project you want to start (ex: https://raw.githubusercontent.com/moT01/.learn-bash-by-building-a-boilerplate/main/tutorial.json)
 1. Click the "Start" button
@@ -22,7 +22,7 @@
 
 Note: If you restart or switch projects you will lose your progress, along with any files or directories you created.
 
-1. Press Ctrl / Cmd + P and enter `Remote-Containers: Rebuild Container`
+1. Press Ctrl / Cmd + Shift + P and enter `Remote-Containers: Rebuild Container`
 1. Wait for VS Code to reopen and reload the Docker container
 1. Open CodeRoad, enter the URL to a `tutorial.json` file, and start the project as described above
 
