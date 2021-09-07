@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:hirsute
 
 ARG USERNAME=codeally
 ARG HOMEDIR=/home/$USERNAME
