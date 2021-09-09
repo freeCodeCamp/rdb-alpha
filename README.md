@@ -14,9 +14,6 @@
 1. In the CodeRoad window, click "Start New Tutorial"
 1. Enter the URL to the `tutorial.json` file of the project you want to start (ex: https://raw.githubusercontent.com/moT01/.learn-bash-by-building-a-boilerplate/main/tutorial.json)
 1. Click the "Start" button
-1. If a VS Code terminal is open, kill it by clicking the trashcan icon in the upper-right corner
-1. Open a new VS Code terminal with Ctrl / Cmd + Shift + `
-1. Start coding
 
 ### How to Restart or Switch Projects
 
