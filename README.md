@@ -15,6 +15,8 @@
 1. Enter the URL to the `tutorial.json` file of the project you want to start (ex: https://raw.githubusercontent.com/moT01/.learn-bash-by-building-a-boilerplate/main/tutorial.json)
 1. Click the "Start" button
 
+There may be some additional troubleshooting steps to get the container running properly. They can often be solved by following the onscreen instructions, or examining any error messages in your terminal.
+
 ### How to Restart or Switch Projects
 
 Note: If you restart or switch projects you will lose your progress, along with any files or directories you created.
