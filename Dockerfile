@@ -4,9 +4,7 @@ ARG USERNAME=codeally
 ARG HOMEDIR=/home/$USERNAME
 
 ENV TZ="America/New_York" \
-  LOCALE=en_US.UTF-8 \
-  NODE_VERSION=14 \
-  NVM_DIR="${HOMEDIR}/.nvm"
+  LOCALE=en_US.UTF-8
 
 RUN apt update && apt install -y sudo
 
@@ -33,20 +31,9 @@ RUN sudo apt install -y curl git postgresql postgresql-contrib nano bash-complet
 # Set up locales
 RUN sudo locale-gen ${LOCALE} && sudo update-locale LANG=${LOCALE}
 
-# Set shell to install nvm
-SHELL ["/bin/bash", "--login", "-i", "-c"]
-
-# Install and configure nvm
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-
-RUN . "$NVM_DIR/nvm.sh" && nvm install ${NODE_VERSION} && \
-  . "$NVM_DIR/nvm.sh" && nvm use v${NODE_VERSION} && \
-  . "$NVM_DIR/nvm.sh" && nvm alias default v${NODE_VERSION}
-
-ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
-
-# Reset shell
-SHELL ["/bin/bash", "--login", "-c"]
+# Install Node LTS
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+RUN sudo apt install -y nodejs
 
 # Configure project directory
 RUN mkdir ${HOMEDIR}/project
