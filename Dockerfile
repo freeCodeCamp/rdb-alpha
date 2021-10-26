@@ -32,7 +32,7 @@ RUN sudo apt install -y curl git postgresql postgresql-contrib nano bash-complet
 RUN sudo locale-gen ${LOCALE} && sudo update-locale LANG=${LOCALE}
 
 # Install Node LTS
-RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 RUN sudo apt install -y nodejs
 
 # Configure project directory
