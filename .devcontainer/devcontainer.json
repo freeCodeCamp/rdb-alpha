@@ -3,6 +3,6 @@
   "dockerFile": "../Dockerfile",
   "workspaceFolder": "/home/codeally/project",
   "extensions": [
-    "coderoad.coderoad"
+    "coderoad.coderoad@0.15.1"
   ]
 }
