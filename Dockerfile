@@ -6,7 +6,7 @@ ARG HOMEDIR=/home/$USERNAME
 ENV TZ="America/New_York" \
   LOCALE=en_US.UTF-8
 
-RUN apt update && apt install -y sudo
+RUN apt update --fix-missing && apt install -y sudo
 
 # Unminimize Ubuntu to restore man pages
 RUN yes | unminimize
