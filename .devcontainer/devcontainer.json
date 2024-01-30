@@ -1,8 +1,12 @@
 {
   "name": "RDB Alpha",
   "dockerFile": "../Dockerfile",
-  "workspaceFolder": "/home/codeally/project",
-  "extensions": [
-    "coderoad.coderoad@0.15.1"
-  ]
+  "workspaceFolder": "/workspace/project",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "coderoad.coderoad@0.15.1"
+      ]
+    }
+  }
 }
