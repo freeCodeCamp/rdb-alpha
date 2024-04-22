@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
-ARG USERNAME=codeally
-ARG HOMEDIR=/home/$USERNAME
+ARG USERNAME=camper
+ARG HOMEDIR=/workspace/project
 
 ENV TZ="America/New_York" \
   LOCALE=en_US.UTF-8
@@ -36,5 +36,10 @@ RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 RUN sudo apt install -y nodejs
 
 # Configure project directory
-RUN mkdir ${HOMEDIR}/project
-WORKDIR ${HOMEDIR}/project
+RUN sudo mkdir /workspace
+RUN sudo mkdir ${HOMEDIR}
+RUN sudo chown -R ${USERNAME}:${USERNAME} ${HOMEDIR}
+
+WORKDIR ${HOMEDIR}
+
+ENV CODEROAD_DISABLE_RUN_ON_SAVE=true
