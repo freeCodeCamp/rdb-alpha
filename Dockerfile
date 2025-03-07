@@ -26,7 +26,7 @@ RUN sudo chown -R ${USERNAME}:${USERNAME} ${HOMEDIR}
 WORKDIR ${HOMEDIR}
 
 ENV CODEROAD_DISABLE_RUN_ON_SAVE=true
-# Do not change above this line,
+# Do not change above this line.
 
 # Paste your token below:
 ENV CODEROAD_WEBHOOK_TOKEN=
