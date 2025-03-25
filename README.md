@@ -28,7 +28,7 @@ Note: If you restart or switch projects you will lose your progress, along with 
 ### `tutorial.json` File URLs for CodeRoad
 
 - [Learn Bash by Building a Boilerplate](https://raw.githubusercontent.com/freeCodeCamp/learn-bash-by-building-a-boilerplate/main/tutorial.json)
-- [Learn Relational Databases by Building a Mario Database](https://raw.githubusercontent.com/freeCodeCamp/learn-relational-databases-by-building-a-mario-database/main/tutorial.json)
+- [Learn Relational Databases by Building a Database of Video Game Characters](https://raw.githubusercontent.com/freeCodeCamp/learn-relational-databases-by-building-a-database-of-video-game-characters/main/tutorial.json)
 - [Celestial Bodies Database](https://raw.githubusercontent.com/freeCodeCamp/learn-celestial-bodies-database/main/tutorial.json)
 - [Learn Bash Scripting by Building Five Programs](https://raw.githubusercontent.com/freeCodeCamp/learn-bash-scripting-by-building-five-programs/main/tutorial.json)
 - [Learn SQL by Building a Student Database: Part 1](https://raw.githubusercontent.com/freeCodeCamp/learn-sql-by-building-a-student-database-part-1/main/tutorial.json)
@@ -40,5 +40,4 @@ Note: If you restart or switch projects you will lose your progress, along with 
 - [Learn Nano by Building a Castle](https://raw.githubusercontent.com/freeCodeCamp/learn-nano-by-building-a-castle/main/tutorial.json)
 - [Learn Git by Building an SQL Reference Object](https://raw.githubusercontent.com/freeCodeCamp/learn-git-by-building-an-sql-reference-object/main/tutorial.json)
 - [Periodic Table Database](https://raw.githubusercontent.com/freeCodeCamp/learn-periodic-table-database/main/tutorial.json)
-- Learn GitHub by Building a List of Inspirational Quotes (in progress)
 - [Number Guessing Game](https://raw.githubusercontent.com/freeCodeCamp/learn-number-guessing-game/main/tutorial.json)
