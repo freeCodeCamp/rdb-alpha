@@ -5,7 +5,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "coderoad.coderoad@0.15.1"
+        "coderoad.coderoad@0.17.2"
       ]
     }
   }
